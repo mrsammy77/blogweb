@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+}
+
+:root {
+    --primary: #FD841F;
+    --secondary: #000;
+    --nav: #f0f0f0;
+    --gray: #8E8E8E;
+}
+
+
+.login_page {
+    height: 100vh;
+}
+
+.right {
+    background-color: var(--primary);
+}
+
+.image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 25%;
+}
+.login {
+    font-size: 1.1rem !important;
+    border: 2px solid var(--primary);
+    padding: 5px 8px;
+    border-radius: 10px !important;
+    color: var(--primary);
+    background-color: #fff !important;
+    font-weight: 600;
+}
+
+input.form-control {
+    border: 1px solid var(--gray); 
+    color: var(--primary) !important;
+}
+input.form-control:focus {
+    border-color: var(--primary);
+    box-shadow: none; 
+}
+
+.login:hover {
+    background-color: var(--primary) !important;
+    color: #f0f0f0;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+
+
+
+@media screen and (max-width: 575px) {
+    .right{
+        margin-top: 5% !important;
+    }
+    .form {
+        margin-top: 5%;
+    }
+}
